@@ -1,25 +1,16 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
-
+import LoginForm from './Components/LoginForm';
+import RegisterForm from './Components/RegisterForm';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const[isRegister,setisRegister]=useState(true);
+  return(
+    <div className='hoodie'>
+      <button onClick={()=>setisRegister(!isRegister)}>
+        {isRegister ? `Switch to Login`:`Switch to Register`}
+      </button>
+      {isRegister ? <RegisterForm />:<LoginForm />}
     </div>
   );
 }
-
 export default App;

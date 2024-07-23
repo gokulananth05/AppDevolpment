@@ -1,0 +1,29 @@
+.first
+{
+    padding: 30px;
+    border: 1px solid white;
+    margin-left: 500px;
+    margin-right: 450px;
+    margin-top: 100px;
+    background-color: beige;
+    border-radius: 10px;
+}
+h2
+{
+    padding-left: 90px;
+}
+.third
+{
+    padding-top: 30px;
+}
+.second
+{
+    padding-top: 30px;
+
+}
+.fourth
+{
+    padding-top: 30px;
+    align-items: center;
+    padding-left: 90px;
+}
